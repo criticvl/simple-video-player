@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>Simple Video Player</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <video id="videoPlayer" controls poster="preview.jpg" data-setup="{}">
+        <source id="videoSource" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to
+          a web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
+      <div class="input-wrapper">
+        <input
+          id="urlInput"
+          class="input-element"
+          placeholder="input url here"
+          type="search"
+        />
+        <button id="urlClear" class="input-element">Clear</button>
+        <button id="urlButton" class="input-element">Load</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
